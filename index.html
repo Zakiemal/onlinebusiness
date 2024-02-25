@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Digital Business</title>
+    <style>
+    body {
+      background-color: #b3d0c6;
+      font-family: "Trirong", serif;
+      overflow-x: hidden;
+      margin: 0;
+    }
+    .p {
+      padding-left: 30px;
+      padding-right: 30px;
+      text-align: justify;
+      color:#1b4543
+    }
+
+.navbar {
+  overflow: auto;
+  background-color: #1b4543;
+  width: 100%;
+  display: none;
+}
+
+.navbar a {
+  float: left;
+  font-size: 16px;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.subnav {
+  float: right;
+  overflow: hidden;
+}
+
+.subnav .subnavbtn {
+  font-size: 16px;  
+  border: none;
+  outline: none;
+  color: white;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+}
+
+.navbar a:hover, .subnav:hover .subnavbtn {
+  background-color: #b3d0c6;
+}
+
+.subnav-content {
+  display: none;
+  position: absolute;
+  right: 0;
+  background-color: #b3d0c6;
+  width: 100%;
+  z-index: 1;
+}
+
+.subnav-content a {
+  float: right;
+  color: white;
+  text-decoration: none;
+}
+
+.subnav-content a:hover {
+  background-color: #eee;
+  color: black;
+}
+
+.subnav:hover .subnav-content {
+  display: block;
+}
+    h1  {
+    color: #1b4543;
+    text-align: left;
+    font-size: 5rem;
+    padding-left: 30px;
+    padding-bottom: 0px;
+}
+h4  {
+    color: #1b4543;
+    text-align: left;
+    font-size: 1rem;
+    padding-left: 30px;
+    padding-top: 0px;
+}
+.navbar {
+  display: flex;
+  color:#1b4543;
+  font-size: 20px;
+  justify-content: right;
+  align-content: right 15px;
+  margin-right: 50px;
+  gap: 20px;
+}
+.heading {
+  display: flex;
+  background-color: #f0be6f;
+  width: 100%;
+  height: 25px;
+  text-align: right;
+  padding-right: 20px;
+  margin-top: 0px;
+  gap: 20px;
+  justify-content: right;
+  align-content: right;
+  padding-top: 3px;
+}
+a:link {
+  text-decoration: none;
+}
+.footer {
+  background-color: #1b4543;
+  color: #f0be6f;
+  width: 100%;
+  margin: 0;
+  bottom: 0;
+  padding-left: 20px;
+  display: flex;
+  gap: 30px;
+
+}
+ul {
+  font-size: 18px;
+  color: white;
+  list-style: none;
+}
+ol {
+  font-size: 18px;
+  color: white;
+  list-style: none;
+}
+.getintouch {
+  font-size: 18px;
+  color: white;
+  list-style: none;
+}
+
+h5 {
+  font-size: 1.50rem;
+  font-weight: 500;
+  margin-bottom: 5px;
+  margin-top: 5px;
+}
+
+a:visited {
+  color:#eee;
+  background-color: transparent;
+  text-decoration: none;
+}
+a:hover {
+  color:red;
+  background-color: transparent;
+  text-decoration: underline;
+}
+a:active {
+  color: yellow;
+  background-color: transparent;
+  text-decoration: underline;
+}
+/* For mobile phones: */
+[class*="col-"] {
+  width: 100%;
+}
+
+@media only screen and (min-width: 600px) {
+  /* For tablets: */
+  .col-s-1 {width: 8.33%;}
+  .col-s-2 {width: 16.66%;}
+  .col-s-3 {width: 25%;}
+  .col-s-4 {width: 33.33%;}
+  .col-s-5 {width: 41.66%;}
+  .col-s-6 {width: 50%;}
+  .col-s-7 {width: 58.33%;}
+  .col-s-8 {width: 66.66%;}
+  .col-s-9 {width: 75%;}
+  .col-s-10 {width: 83.33%;}
+  .col-s-11 {width: 91.66%;}
+  .col-s-12 {width: 100%;}
+}
+@media only screen and (min-width: 768px) {
+  /* For desktop: */
+  .col-1 {width: 8.33%;}
+  .col-2 {width: 16.66%;}
+  .col-3 {width: 25%;}
+  .col-4 {width: 33.33%;}
+  .col-5 {width: 41.66%;}
+  .col-6 {width: 50%;}
+  .col-7 {width: 58.33%;}
+  .col-8 {width: 66.66%;}
+  .col-9 {width: 75%;}
+  .col-10 {width: 83.33%;}
+  .col-11 {width: 91.66%;}
+  .col-12 {width: 100%;}
+}
+
+.top-left {
+  position: absolute;
+  top: 70px;
+  left: 100px;
+  font-size: 5rem;
+}
+.container {
+  position: relative;
+  text-align: center;
+  color: white;
+}
+.emal-image {
+  border: 2px solid red;
+  border-radius: 5px;
+}
+.h1 {
+  text-align: center;
+  font-size: 4rem;
+  color:#1b4543;
+}
+.h3 {
+  text-align: center;
+  font-size: 1.5rem;
+  color: #1b4543;
+}
+
+
+  </style>
+</head>
+
+
+<body>
+  <div class="navbar">
+    <a href="#home">Home</a>
+    <div class="subnav">
+      <button class="subnavbtn">About <i class="fa fa-caret-down"></i></button>
+      <div class="subnav-content">
+        <a href="#company">Company</a>
+        <a href="#team">Team</a>
+        <a href="#careers">Careers</a>
+      </div>
+    </div> 
+    <div class="subnav">
+      <button class="subnavbtn">Services <i class="fa fa-caret-down"></i></button>
+      <div class="subnav-content">
+        <a href="#bring">Bring</a>
+        <a href="#deliver">Deliver</a>
+        <a href="#package">Package</a>
+        <a href="#express">Express</a>
+      </div>
+    </div> 
+    <div class="subnav">
+      <button class="subnavbtn">Partners <i class="fa fa-caret-down"></i></button>
+      <div class="subnav-content">
+        <a href="#link1">Link 1</a>
+        <a href="#link2">Link 2</a>
+        <a href="#link3">Link 3</a>
+        <a href="#link4">Link 4</a>
+      </div>
+    </div>
+    <a href="#contact">Contact</a>
+  </div>
+  <div class="container">
+  <img src="./businessman-working-tablet-cafe.jpg" width="100%" height="80%">
+  <div class="top-left">Working Digital Business</div>
+    <div class="h1"></div>
+    <div class="emal-image">
+    <img src="./0035 (5).jpg" width="300px" height="400px">
+    </div>
+    <div class="h1">Online Income With Digital Business</div>
+      <div class="h3">The Benefits of Going Digital: Why You Should Start a Digital Business</div>
+     <div class="p"> 
+
+      <p>Many aspiring entrepreneurs dream of starting a business, but finding a viable idea can be challenging.<br> In the digital age, selling products and services online<br> presents a vast array of unique, affordable startup options.<br> The key is to match your interests, strengths and skills<br> to an online business idea that can help fill a need in the<br> market and grow into a profitable endeavor.</p>
+        </div>
+      </div>
+      
+      
+    <div class="footer">
+      <div class="ul">
+        <ul>
+          <h5>Information</h5>
+          <li><a href="https://www.google.com">Contact us</a></li>
+          <li><a href="https://karoragroup.com">About us</a></li>
+          <li>our services</li>
+          <li>contac us</li>
+          <li>about us</li>
+          <li>our services</li>
+        </ul>
+      </div>
+      <div class="ol">
+        <ol>
+          <h5>techonlogy</h5>
+          <li>contac us</li>
+          <li>about us</li>
+          <li>our services</li>
+          <li>contac us</li>
+          <li>about us</li>
+          <li>our services</li>
+        </ol>
+      </div>
+      <div class="getintouch">
+        <ul>
+        <h5>Get in Touch</h5>
+        <li>3479 NE 163rd St #1016<br>North Miami Beach<br>FL 33160, United States</li>
+        </ul>
+      </div>
+      
+    </div>
+    
+      
+      
+
+    </div>
+    
+</body>
+</html>
